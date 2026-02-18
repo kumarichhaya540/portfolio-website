@@ -1,0 +1,267 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+}
+
+/* Home Section */
+.home-section {
+  height: 100vh;
+  background: linear-gradient(to right, #141e30, #4c2455);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section span {
+  color: #ffc107;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+   background: linear-gradient(to right, #141e30, #4c2455)
+}
+
+/* Skills */
+.skill-box {
+  background: #a94dbd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(56, 16, 16, 0.1);
+}
+
+/* Cards */
+.card {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+}
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button hover */
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Card hover */
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+}
+.skill-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  margin: 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 193, 7, 0.2);
+}
+
+/* Projects Section Styling */
+.project-card {
+  background: rgb(192, 135, 203);
+  border-radius: 15px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.project-body h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-body p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+
+}
+
+/* Tech Tags */
+.tech {
+  display: inline-block;
+  background: #764ba2;
+  color: whitesmoke;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+   box-shadow: 0 0 0 2px #764ba2;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.4s;
+  height: 100%;
+}
+
+.glass-card:hover {
+  transform: translateY(-12px);
+  background: rgba(255, 193, 7, 0.25);
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+  padding: 90px 0;
+   background: linear-gradient(to right, #141e30, #4c2455)
+}
+
+/* Left text box */
+.contact-info {
+  color: rgb(177, 170, 170);
+  padding: 30px;
+}
+
+.contact-info h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  opacity: 0.95;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* Right form card */
+.contact-card {
+  background: linear-gradient(135deg, #7bd0ef, #4f8389);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Inputs */
+.contact-card .form-control {
+  border-radius: 12px;
+  padding: 12px;
+  border: none;
+  background: #f7f7f7;
+}
+
+.contact-card .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #764ba2;
+}
+
+/* Button */
+.contact-card button {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  color: white;
+  border-radius: 12px;
+}
+
+.contact-card button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Success message */
+#success-msg {
+  font-weight: 600;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .contact-info {
+    text-align: center;
+  }
+}
+/* ===== COMMON GRADIENT BACKGROUND (LIKE HOME) ===== */
+.gradient-bg {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  position: relative;
+}
+
+/* section padding */
+.gradient-bg {
+  padding: 80px 0;
+}
+
+/* headings */
+.gradient-bg h2,
+.gradient-bg h3,
+.gradient-bg h4 {
+  color: #ffc107;
+  font-weight: 700;
+}
+
+/* paragraph text */
+.gradient-bg p {
+  color: #e0e0e0;
+}
+
+/* divider line */
+.section-line {
+  width: 80px;
+  height: 4px;
+  background: #ffc107;
+  margin: 10px auto 40px;
+  border-radius: 5px;
+}
