@@ -17,10 +17,12 @@ This project is a personal portfolio website created as part of the task submiss
 - EmailJS
 
 ## Live Demo
-(Website link will be added here)
+https://kumarichhaya540.github.io/portfolio-website/
+
 
 ## GitHub Repository
-https://github.com/your-username/portfolio-website
+https://kumarichhaya540.github.io/portfolio-website/
+
 
 ## Screenshots
 (Images added below)
